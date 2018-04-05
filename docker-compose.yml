@@ -28,17 +28,17 @@ services:
     labels:
       - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy=true"
 
-  letsencrypt:
-    image: jrcs/letsencrypt-nginx-proxy-companion:stable
-    restart: always
-    container_name: nginx-proxy-le
-    depends_on:
-      - nginx
-    environment:
-      NGINX_PROXY_CONTAINER: nginx-proxy
-    volumes:
-      - ${PWD}/nginx/conf.d:/etc/nginx/conf.d
-      - ${PWD}/nginx/certs:/etc/nginx/certs:rw
-      - vhost:/etc/nginx/vhost.d
-      - html:/usr/share/nginx/html
+  # letsencrypt:
+  #   image: jrcs/letsencrypt-nginx-proxy-companion:stable
+  #   restart: always
+  #   container_name: nginx-proxy-le
+  #   depends_on:
+  #     - nginx
+  #   environment:
+  #     NGINX_PROXY_CONTAINER: nginx-proxy
+  #   volumes:
+  #     - ${PWD}/nginx/conf.d:/etc/nginx/conf.d
+  #     - ${PWD}/nginx/certs:/etc/nginx/certs:rw
+  #     - vhost:/etc/nginx/vhost.d
+  #     - html:/usr/share/nginx/html
 
