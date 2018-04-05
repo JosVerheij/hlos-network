@@ -21,9 +21,8 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ${PWD}/nginx/certs:/etc/nginx/certs:ro
       - ${PWD}/nginx/conf.d:/etc/nginx/conf.d
-      - vhost:/etc/nginx/vhost.d
+      - certs:/etc/nginx/certs:ro
       - html:/usr/share/nginx/html
     labels:
       - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy=true"
