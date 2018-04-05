@@ -23,7 +23,7 @@ services:
     volumes:
       - ${PWD}/nginx/conf.d:/etc/nginx/conf.d
       - certs:/etc/nginx/certs:ro
-      - html:/usr/share/nginx/html
+      - html:/data/letsencrypt/
     labels:
       - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy=true"
 
