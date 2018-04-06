@@ -11,9 +11,13 @@ For Qlik Sense.
 
 ## Adding Qlik (Sense) sites
 
-1. Copy `conf.d/sense.example.com.conf` to `conf.d/desired.domain.com.conf`
-2. Edit all instances of `example.com` to desired domain
+> Currently incomplete. Certificate generation needs to be added. 2 iterations are required to 1) first enable certificate generation, and 2) enable the Qlik Sense site.
+
+1. Copy `conf.d/sense.example` to `conf.d/my.domain.com.conf`
+2. Replace all instances of `[DOMAIN_NAME_HERE]` to desired domain (eg. `my.domain.com`)
+3. Replace all instances of IP ADRESS... TODO...
 3. Restart Ningx: `docker-compose restart`
+4. 
 
 ## Resources
 
