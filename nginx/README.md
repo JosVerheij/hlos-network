@@ -24,3 +24,5 @@ For Qlik Sense.
 [Certbot with Nginx](https://miki725.github.io/docker/crypto/2017/01/29/docker+nginx+letsencrypt.html)
 
 [Nginx and Qlik Sense](https://github.com/braathen/qlik-misc-stuff/blob/master/nginx/nginx.conf)
+
+[Alpine Linux and Nginx](https://wiki.alpinelinux.org/wiki/Nginx_as_reverse_proxy_with_acme_(letsencrypt\)#Automatic_generation_of_certificates)
