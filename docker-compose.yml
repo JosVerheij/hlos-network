@@ -18,15 +18,19 @@ services:
     image: nginx:alpine
     container_name: nginx-proxy
     restart: always
-    ports:
-      - 80:80
-      - 443:443
+    # ports:
+    #   - 80:80
+    #   - 443:443
     volumes:
       - ${PWD}/nginx/conf.d:/etc/nginx/conf.d
       - certs:/etc/nginx/certs:ro
       - html:/var/www/acme
     labels:
       - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy=true"
+      - traefik.enable=true
+      - traefik.backend=nginx
+      - traefik.frontend.rule=Host:ve.josverheij.nl
+      - traefik.port=443
 
   # letsencrypt:
   #   image: jrcs/letsencrypt-nginx-proxy-companion:stable
@@ -50,6 +54,8 @@ services:
 #    environment:
 #      - INFLUXDB_ADDRESS=traefik-write:bYXbKA2QCnXRGEfmpJzk=ijJ?mxFbQmP4cadRtbpsMAWzGscerZBeAg@influxdb:8089
     ports:
+      - 80:80
+      - 443:443
       - 8080:8080
     volumes:
       - ${PWD}/traefik/traefik.toml:/etc/traefik/traefik.toml
