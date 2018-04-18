@@ -48,9 +48,9 @@ defaultEntryPoints = ["http", "https"]
 
 # File backend
 
-# [file]
-#   directory = "/rules/"
-#   watch = true
+[file]
+  directory = "/rules/"
+  watch = true
 
 # Traefik logs
 # Enabled by default and log to stdout
