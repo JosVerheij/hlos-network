@@ -1,0 +1,15 @@
+#TODO: not ready for usage
+
+# TCP Load balancing (passthrough traffic)
+stream {
+	
+	server {
+		listen 80;
+		server_name tpscan.josverheij.nl www.tpscan.josverheij.nl;
+	}
+
+	server {
+		listen 443 ssl;
+		server_name tpscan.hippoline.nl www.tpscan.hippoline.nl;
+	}
+}
