@@ -53,7 +53,7 @@ services:
     hostname: traefik
 #    environment:
 #      - INFLUXDB_ADDRESS=traefik-write:bYXbKA2QCnXRGEfmpJzk=ijJ?mxFbQmP4cadRtbpsMAWzGscerZBeAg@influxdb:8089
-    # ports:
+    ports:
     #   - 80:80
     #   - 443:443
       - 8080:8080
