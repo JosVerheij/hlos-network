@@ -13,6 +13,7 @@ volumes:
   certs:
 
 services:
+
   nginx:
     image: nginx:alpine
     container_name: nginx-proxy
@@ -41,3 +42,17 @@ services:
   #     - vhost:/etc/nginx/vhost.d
   #     - html:/usr/share/nginx/html
 
+  traefik:
+    image: traefik:alpine
+    container_name: traefik-proxy
+    restart: always
+    hostname: traefik
+#    environment:
+#      - INFLUXDB_ADDRESS=traefik-write:bYXbKA2QCnXRGEfmpJzk=ijJ?mxFbQmP4cadRtbpsMAWzGscerZBeAg@influxdb:8089
+    ports:
+      - 8080:8080
+    volumes:
+      - ${PWD}/traefik/traefik.toml:/etc/traefik/traefik.toml
+      - ${PWD}/traefik/rules:/rules
+      - ${PWD}/traefik/acme.json:/acme.json
+      - /var/run/docker.sock:/var/run/docker.sock:ro
