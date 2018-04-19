@@ -13,5 +13,3 @@
     [frontends.tpscan.routes]
       [frontends.tpscan.routes.route0]
         rule = "Host:tpscan.josverheij.nl"
-      [frontends.tpscan.routes.route1]
-        rule = "Path: /; AddPrefix: /qlikview"
