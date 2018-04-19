@@ -3,7 +3,7 @@
   [backends.tpscan]
     [backends.tpscan.servers]
       [backends.tpscan.servers.server0]
-        url = "http://10.70.0.3:80"
+        url = "http://10.70.0.3:80/qlikview"
 
 [frontends]
   [frontends.tpscan]
@@ -12,4 +12,4 @@
 
     [frontends.tpscan.routes]
       [frontends.tpscan.routes.route0]
-        rule = "Host:tpscan.josverheij.nl"
+        rule = "Host:tpscan.josverheij.nl; PathPrefixStrip: /qlikview/"
