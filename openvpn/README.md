@@ -122,6 +122,8 @@ In de Windows taakbalk staat rechtsonderin het OpenVPN icoon.
 - Verwijder de gebruikersconfiguratie
 
 ```bash
+export CLIENTNAME="hippoline_[CLIENT_NAAM]" # eg. "hippoline_jos"
+
 # KEEP the corresponding crt, key and req files.
 docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME
 
