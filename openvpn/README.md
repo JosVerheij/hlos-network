@@ -2,6 +2,10 @@
 
 HippoLine gebruikt OpenVPN voor het verbinden met het netwerk.
 
+## Setup domein
+
+Voor het verbinden met de OpenVPN server moet een *geldige domeinnaam* worden gebruikt. Dit is bijvoorbeeld `vpn.hippoline.nl`. Zorg dat er een DNS-verwijzing (domeinnaamverwijzing) is van de gewenste domeinnaam naar het IP adres van deze server.
+
 ## (Eerste) Setup Server
 
 Voor de eerste setup moeten we e.e.a. instellen voordat de VPN server klaar voor gebruik is.
