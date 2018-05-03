@@ -13,3 +13,6 @@
     [frontends.tpscan.routes]
       [frontends.tpscan.routes.route0]
         rule = "Host:tpscan.josverheij.nl"
+
+    [frontends.tpscan.redirect]
+      
