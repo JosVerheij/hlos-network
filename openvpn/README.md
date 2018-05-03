@@ -2,6 +2,8 @@
 
 HippoLine gebruikt OpenVPN voor het verbinden met het netwerk.
 
+Zorg dat je *altijd* in de `hlos-network` root-folder zit bij het uitvoeren van onderstaande acties. (ie. de map waar docker-compose.yml in te vinden is)
+
 ## Setup domein
 
 Voor het verbinden met de OpenVPN server moet een *geldige domeinnaam* worden gebruikt. Dit is bijvoorbeeld `vpn.hippoline.nl`. Zorg dat er een DNS-verwijzing (domeinnaamverwijzing) is van de gewenste domeinnaam naar het IP adres van deze server.
@@ -113,3 +115,18 @@ In de Windows taakbalk staat rechtsonderin het OpenVPN icoon.
 
 - Rechtsklik op het OpenVPN icoon -> Connect --> Kies de juiste verbinding
 
+## Toegang gebruiker ontzeggen
+
+- Achterhaal de 'CLIENTNAME' van de gebruiker. Eg. `hippoline_jos`.
+
+- Verwijder de gebruikersconfiguratie
+
+```bash
+# KEEP the corresponding crt, key and req files.
+docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME
+
+# OR
+
+# REMOVE the corresponding crt, key and req files.
+docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME remove
+```
