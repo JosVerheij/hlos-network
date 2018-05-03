@@ -130,3 +130,7 @@ docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME
 # REMOVE the corresponding crt, key and req files.
 docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME remove
 ```
+
+## Sources
+
+- <https://github.com/kylemanna/docker-openvpn/blob/master/docs/docker-compose.md>
