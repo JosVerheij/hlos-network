@@ -47,7 +47,9 @@ In de VPN configuratie krijgt elke gebruiker een eigen certificaat, waarmee verb
 
 ### Gebruikersconfiguratie aanmaken
 
-Een gebruikerscertificaat en -configuratie wordt zoals onderstaand aangemaakt. Je kunt ervoor kiezen om een wachtwoord op te geven (veilig) of niet. Dit wachtwoord heb je 
+Een gebruikerscertificaat en -configuratie wordt zoals onderstaand aangemaakt. 
+
+Tijdens het aanmaken wordt gevraagd om de *private key* (deze is aangemaakt tijdens de setup van de server); zorg dat je deze bij de hand hebt.
 
 ```bash
 export CLIENTNAME="hippoline_[CLIENT_NAAM]" # eg. "hippoline_jos"
