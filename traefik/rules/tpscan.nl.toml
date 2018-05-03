@@ -1,0 +1,18 @@
+# tpscan.josverheij.nl.toml
+[backends]
+  [backends.tpscan]
+    [backends.tpscan.servers]
+      [backends.tpscan.servers.server0]
+        url = "http://10.70.0.3:80"
+
+[frontends]
+  [frontends.tpscan]
+    backend = "tpscan"
+    passHostHeader = true
+
+    [frontends.tpscan.routes]
+      [frontends.tpscan.routes.route0]
+        rule = "Host:tpscan.nl"
+
+    [frontends.tpscan.redirect]
+      
