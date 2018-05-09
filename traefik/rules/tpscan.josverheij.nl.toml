@@ -3,7 +3,7 @@
   [backends.tpscan]
     [backends.tpscan.servers]
       [backends.tpscan.servers.server0]
-        url = "http://10.70.0.3:80"
+        url = "https://10.70.0.3:443"
 
 [frontends]
   [frontends.tpscan]
