@@ -32,4 +32,4 @@ services:
       - 1194:1194/udp
     restart: always
     volumes:
-      - {PWD}/openvpn/data/conf:/etc/openvpn
+      - ${PWD}/openvpn/data/conf:/etc/openvpn
