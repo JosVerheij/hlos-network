@@ -6,45 +6,7 @@ version: '3'
 #     external:
 #       name: nginx-proxy
 
-volumes:
-  conf:
-  vhost:
-  html:
-  certs:
-
 services:
-
-  # nginx:
-  #   image: nginx:alpine
-  #   container_name: nginx-proxy
-  #   restart: always
-  #   ports:
-  #     - 80:80
-  #     - 443:443
-  #   volumes:
-  #     - ${PWD}/nginx/conf.d:/etc/nginx/conf.d
-  #     - certs:/etc/nginx/certs:ro
-  #     - html:/var/www/acme
-  #   labels:
-  #     - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy=true"
-  #     - traefik.enable=true
-  #     - traefik.backend=nginx
-  #     - traefik.frontend.rule=Host:ve.josverheij.nl
-  #     - traefik.port=443
-
-  # letsencrypt:
-  #   image: jrcs/letsencrypt-nginx-proxy-companion:stable
-  #   restart: always
-  #   container_name: nginx-proxy-le
-  #   depends_on:
-  #     - nginx
-  #   environment:
-  #     NGINX_PROXY_CONTAINER: nginx-proxy
-  #   volumes:
-  #     - ${PWD}/nginx/conf.d:/etc/nginx/conf.d
-  #     - ${PWD}/nginx/certs:/etc/nginx/certs:rw
-  #     - vhost:/etc/nginx/vhost.d
-  #     - html:/usr/share/nginx/html
 
   traefik:
     image: traefik:alpine
