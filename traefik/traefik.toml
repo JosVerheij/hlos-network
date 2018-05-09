@@ -39,7 +39,7 @@ defaultEntryPoints = ["http", "https"]
   [entryPoints.https]
   address = ":443"
     [entryPoints.https.tls]
-#      InsecureSkipVerify = true
+      # InsecureSkipVerify = true
   [entryPoints.traefik]
   address = ":8080"
     [entryPoints.traefik.tls]
@@ -51,6 +51,7 @@ defaultEntryPoints = ["http", "https"]
 [file]
   directory = "/rules/"
   watch = true
+  InsecureSkipVerify = true
 
 # Traefik logs
 # Enabled by default and log to stdout
