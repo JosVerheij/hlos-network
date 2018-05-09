@@ -13,4 +13,6 @@
     [frontends.validexpress.routes]
       [frontends.validexpress.routes.route0]
         rule = "Host:validexpress.hippoline.nl"
+      [frontends.validexpress.routes.route1]
+        rule = "Host:ve.josverheij.nl"
       
