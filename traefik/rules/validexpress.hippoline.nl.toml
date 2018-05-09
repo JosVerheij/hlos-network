@@ -1,18 +1,18 @@
-# tpscan.josverheij.nl.toml
+# validexpress.hippoline.nl.toml
 [backends]
-  [backends.tpscan]
-    [backends.tpscan.servers]
-      [backends.tpscan.servers.server0]
+  [backends.validexpress]
+    [backends.validexpress.servers]
+      [backends.validexpress.servers.server0]
         url = "https://10.70.0.5:443"
 
 [frontends]
-  [frontends.tpscan]
-    backend = "tpscan"
+  [frontends.validexpress]
+    backend = "validexpress"
     passHostHeader = true
 
-    [frontends.tpscan.routes]
-      [frontends.tpscan.routes.route0]
-        rule = "Host:validexpress.hippoline.nl"
+    [frontends.validexpress.routes]
+      [frontends.validexpress.routes.route0]
+        rule = "Host:validexpress.josverheij.nl"
 
-    [frontends.tpscan.redirect]
+    [frontends.validexpress.redirect]
       
