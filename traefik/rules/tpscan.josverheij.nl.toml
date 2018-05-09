@@ -15,6 +15,6 @@
         rule = "Host:tpscan.josverheij.nl"
 
     [frontends.tpscan.redirect]
-      regex = "^https://tpscan.josverheij.nl/"
+      regex = "^https://tpscan.josverheij.nl/$"
       replacement = "https://tpscan.josverheij.nl/qlikview"
       
