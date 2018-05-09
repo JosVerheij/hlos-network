@@ -9,7 +9,7 @@
   [frontends.validexpress]
     backend = "validexpress"
     passHostHeader = true
-    passTLSCert = true
+    InsecureSkipVerify = true
 
     [frontends.validexpress.routes]
       [frontends.validexpress.routes.route0]
