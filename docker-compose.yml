@@ -33,13 +33,3 @@ services:
     restart: always
     volumes:
       - ${PWD}/openvpn/data/conf:/etc/openvpn
-
-  squid:
-    image: sameersbn/squid:latest
-    container_name: squid_proxy
-    restart: always
-    ports:
-      - 3128:3128
-    volumes:
-      - ${PWD}/squid/cache:/var/spool/squid3
-      - ${PWD}/squid/squid.conf:/etc/squid3/squid.conf
