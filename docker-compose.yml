@@ -23,13 +23,13 @@ services:
       - ${PWD}/traefik/acme.json:/acme.json
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
-  openvpn:
-    cap_add:
-      - NET_ADMIN
-    image: kylemanna/openvpn
-    container_name: openvpn
-    ports:
-      - 1194:1194/udp
-    restart: always
-    volumes:
-      - ${PWD}/openvpn/data/conf:/etc/openvpn
+  # openvpn:
+  #   cap_add:
+  #     - NET_ADMIN
+  #   image: kylemanna/openvpn
+  #   container_name: openvpn
+  #   ports:
+  #     - 1194:1194/udp
+  #   restart: always
+  #   volumes:
+  #     - ${PWD}/openvpn/data/conf:/etc/openvpn
