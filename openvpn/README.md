@@ -6,7 +6,7 @@ Zorg dat je *altijd* in de `hlos-network` root-folder zit bij het uitvoeren van 
 
 ## Setup domein
 
-Voor het verbinden met de OpenVPN server moet een *geldige domeinnaam* worden gebruikt. Dit is bijvoorbeeld `vpn.hippoline.nl`. Zorg dat er een DNS-verwijzing (domeinnaamverwijzing) is van de gewenste domeinnaam naar het IP adres van deze server.
+Voor het verbinden met de OpenVPN server moet een *geldige domeinnaam* worden gebruikt. Dit is bijvoorbeeld `openvpn.hippoline.nl`. Zorg dat er een DNS-verwijzing (domeinnaamverwijzing) is van de gewenste domeinnaam naar het IP adres van deze server.
 
 ## (Eerste) Setup Server
 
