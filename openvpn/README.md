@@ -133,6 +133,6 @@ docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME
 docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME remove
 ```
 
-## Sources
+## Naslagwerk
 
 - <https://github.com/kylemanna/docker-openvpn/blob/master/docs/docker-compose.md>
