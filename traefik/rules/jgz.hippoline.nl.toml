@@ -3,7 +3,7 @@
   [backends.jgz]
     [backends.jgz.servers]
       [backends.jgz.servers.server0]
-        url = "http://10.70.0.3:80"
+        url = "http://10.70.0.7:80"
 
 [frontends]
   [frontends.jgz]
