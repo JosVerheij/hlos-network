@@ -1,0 +1,20 @@
+# tpscan.hippoline.nl.toml
+[backends]
+  [backends.jgz]
+    [backends.jgz.servers]
+      [backends.jgz.servers.server0]
+        url = "http://10.70.0.3:80"
+
+[frontends]
+  [frontends.jgz]
+    backend = "jgz"
+    passHostHeader = true
+
+    [frontends.jgz.routes]
+      [frontends.jgz.routes.route0]
+        rule = "Host:jgz.hippoline.nl"
+
+    [frontends.jgz.redirect]
+      regex = "^https://jgz.hippoline.nl/$"
+      replacement = "https://jgz.hippoline.nl/qlikview"
+      
