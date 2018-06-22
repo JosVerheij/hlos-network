@@ -1,4 +1,4 @@
-# tpscan.hippoline.nl.toml
+# doppio.hippoline.nl.toml
 [backends]
   [backends.doppio]
     [backends.doppio.servers]
@@ -17,4 +17,3 @@
     [frontends.doppio.redirect]
       regex = "^https://doppio.hippoline.nl/$"
       replacement = "https://doppio.hippoline.nl/qlikview"
-      
