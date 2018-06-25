@@ -14,6 +14,6 @@
       [frontends.doppio.routes.route0]
         rule = "Host:doppio.hippoline.nl"
 
-#    [frontends.doppio.redirect]
-#      regex = "^https://doppio.hippoline.nl/$"
-#      replacement = "https://doppio.hippoline.nl/qlikview"
+    [frontends.doppio.redirect]
+      regex = "^https://doppio.hippoline.nl/$"
+      replacement = "https://doppio.hippoline.nl/qlikview"
