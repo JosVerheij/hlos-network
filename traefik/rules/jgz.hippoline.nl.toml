@@ -14,7 +14,7 @@
       [frontends.jgz.routes.route0]
         rule = "Host:jgz.hippoline.nl"
 
-    [frontends.jgz.redirect]
-      regex = "^https://jgz.hippoline.nl/$"
-      replacement = "https://jgz.hippoline.nl/qlikview"
+#    [frontends.jgz.redirect]
+#      regex = "^https://jgz.hippoline.nl/$"
+#      replacement = "https://jgz.hippoline.nl/qlikview"
       
