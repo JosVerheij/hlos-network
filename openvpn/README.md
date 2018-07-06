@@ -107,6 +107,16 @@ Wanneer de OpenVPN client geinstalleerd staat kun je je eigen VPN gebruikersconf
 
 - Dubbelklik op het configuratiebestand: ie. `hippoline_jos.ovpn`
 
+#### Windows (her)installatie troubleshooting
+
+> Dubbelklikken voegt de verbinding niet toe
+
+In de Windows taskbar, rechtsklik rechtsonderin op het OpenVPN icoon en voeg op die manier de configuratie toe.
+
+> Er bestaat al een verbinding met dezelfde naam
+
+Verwijder het bestand in `C:\Users\[USERNAME]\OpenVPN\Config`, of overschrijf deze handmatig met het nieuwe bestand.
+
 ## Verbinden met VPN
 
 Wanneer de OpenVPN client geinstalleerd is en het `.ovpn` bestand is toegevoegd kun je verbinding maken.
