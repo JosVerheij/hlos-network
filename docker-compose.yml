@@ -1,13 +1,12 @@
 version: '3'
 
-# Do not forget to 'docker network create nginx-proxy' before launch, and to add '--network nginx-proxy' to proxied containers. 
-# networks:
-#   default:
-#     external:
-#       name: nginx-proxy
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false
 
 services:
-
   traefik:
     image: traefik:alpine
     container_name: traefik-proxy
@@ -22,6 +21,9 @@ services:
       - ${PWD}/traefik/rules:/rules
       - ${PWD}/traefik/acme.json:/acme.json
       - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - internal
+      - proxy
 
   openvpn:
     cap_add:
