@@ -1,0 +1,16 @@
+# testgysbert.hippoline.nl.toml
+[backends]
+  [backends.testgysbert]
+    [backends.testgysbert.servers]
+      [backends.testgysbert.servers.server0]
+        url = "https://10.70.0.100:443"
+
+[frontends]
+  [frontends.testgysbert]
+    backend = "testgysbert"
+    passHostHeader = true
+
+    [frontends.testgysbert.routes]
+      [frontends.testgysbert.routes.route0]
+        rule = "Host:testgysbert.hippoline.nl"
+      
