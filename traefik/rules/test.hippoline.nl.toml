@@ -1,16 +1,16 @@
 # validexpress.hippoline.nl.toml
 [backends]
-  [backends.validexpress]
-    [backends.validexpress.servers]
-      [backends.validexpress.servers.server0]
+  [backends.test]
+    [backends.test.servers]
+      [backends.test.servers.server0]
         url = "https://10.70.0.100:443"
 
 [frontends]
-  [frontends.validexpress]
-    backend = "validexpress"
+  [frontends.test]
+    backend = "test"
     passHostHeader = true
 
-    [frontends.validexpress.routes]
-      [frontends.validexpress.routes.route0]
+    [frontends.test.routes]
+      [frontends.test.routes.route0]
         rule = "Host:test.hippoline.nl"
       
