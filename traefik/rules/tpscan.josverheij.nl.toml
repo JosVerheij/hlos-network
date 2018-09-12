@@ -1,4 +1,4 @@
-# tpscan.josverheij.nl.toml
+# tpscan
 [backends]
   [backends.tpscan]
     [backends.tpscan.servers]
@@ -14,7 +14,7 @@
       [frontends.tpscan.routes.route0]
         rule = "Host:tpscan.josverheij.nl"
 
-    [frontends.tpscan.redirect]
-      regex = "^https://tpscan.josverheij.nl/$"
-      replacement = "https://tpscan.josverheij.nl/qlikview"
+    # [frontends.tpscan.redirect]
+    #   regex = "^https://tpscan.josverheij.nl/$"
+    #   replacement = "https://tpscan.josverheij.nl/qlikview"
       
