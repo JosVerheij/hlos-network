@@ -87,7 +87,7 @@ ls
     2. Voer het volgende in
 
 ```bash
-scp -i [BESTANDSPAD NAAR KEY] [USER]@[SERVER-IP]:[MAPNAAM]/[CLIENTCONFIG].ovpn [LOKALE-MAP]
+scp -i [BESTANDSPAD NAAR KEY] [USER]@[SERVER-IP]:[MAPNAAM]/[CLIENTCONFIG].ovpn [LOKALE-MAP]/[CLIENTCONFIG].ovpn
 
 # eg. scp jos@10.80.10.10:~/projects/docker-compose/hippoline_jos.ovpn ~/Desktop/hippoline_jos.ovpn
 ```
