@@ -2,7 +2,7 @@
 
 HippoLine gebruikt OpenVPN voor het verbinden met het netwerk.
 
-Zorg dat je *altijd* in de `hlos-network` root-folder zit bij het uitvoeren van onderstaande acties. (ie. de map waar docker-compose.yml in te vinden is)
+Acties in dit document voer je in principe uit op het betreffende Linux (en Docker systeem). Zorg dat je *altijd* in de `hlos-network` root-folder zit bij het uitvoeren van onderstaande acties. (ie. de map waar docker-compose.yml in te vinden is)
 
 ## Setup domein
 
