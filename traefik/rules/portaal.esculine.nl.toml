@@ -1,9 +1,9 @@
-# portaal.esculine.nl.toml
+# portaalesculine.hippoline.nl.toml
 [backends]
   [backends.portaalesculine]
     [backends.portaalesculine.servers]
       [backends.portaalesculine.servers.server0]
-       url = "https://10.70.0.6:443"
+        url = "https://10.70.0.5:443"
 
 [frontends]
   [frontends.portaalesculine]
@@ -12,5 +12,4 @@
 
     [frontends.portaalesculine.routes]
       [frontends.portaalesculine.routes.route0]
-        rule = "Host:portaal.esculine.nl"
-      
+        rule = "Host:portaalesculine.hippoline.nl"
