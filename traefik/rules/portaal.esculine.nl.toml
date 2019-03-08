@@ -12,4 +12,4 @@
 
     [frontends.portaalesculine.routes]
       [frontends.portaalesculine.routes.route0]
-        rule = "Host:portaalesculine.hippoline.nl"
+        rule = "Host:portaal.esculine.nl"
