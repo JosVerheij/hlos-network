@@ -2,8 +2,8 @@
 [backends]
   [backends.portaalesculine]
     [backends.portaalesculine.servers]
-#      [backends.portaalesculine.servers.server0]
-#       url = "https://10.70.0.6:443"
+      [backends.portaalesculine.servers.server0]
+       url = "https://10.70.0.6:443"
 
 [frontends]
   [frontends.portaalesculine]
