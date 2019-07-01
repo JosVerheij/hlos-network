@@ -14,7 +14,7 @@
       [frontends.qlikview1.routes.route0]
         rule = "Host:qlikview.hippoline.nl"
 
-    # [frontends.qlikview1.redirect]
-    #   regex = "^https://qlikview.hippoline.nl/$"
-    #   replacement = "https://qlikview.hippoline.nl/qlikview"
+    [frontends.qlikview1.redirect]
+      regex = "^https://qlikview.hippoline.nl/$"
+      replacement = "https://qlikview.hippoline.nl/qlikview"
       
