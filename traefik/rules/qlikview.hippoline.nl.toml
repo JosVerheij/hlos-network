@@ -1,0 +1,20 @@
+# qlikview
+[backends]
+  [backends.qlikview1]
+    [backends.qlikview1.servers]
+      [backends.qlikview1.servers.server0]
+        url = "http://10.70.0.3:80"
+
+[frontends]
+  [frontends.qlikview1]
+    backend = "qlikview1"
+    passHostHeader = true
+
+    [frontends.qlikview1.routes]
+      [frontends.qlikview1.routes.route0]
+        rule = "Host:qlikview.hippoline.nl"
+
+    # [frontends.qlikview1.redirect]
+    #   regex = "^https://qlikview.hippoline.nl/$"
+    #   replacement = "https://qlikview.hippoline.nl/qlikview"
+      
